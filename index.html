@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Azure Cloud Architect Program</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    .card-icon {
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+        border: 2px solid #ddd;
+    }
+    
+    .card {
+        position: relative;
+        padding-top: 40px; /* Space for the icon */
+        border-top: 3px solid #007bff;
+    }
+
+    .card-icon i {
+        color: #007bff;
+        font-size: 2rem;
+    }
+
+    .form-control {
+        border: none;
+        border-bottom: 2px solid #ddd;
+        border-radius: 0;
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        border-bottom: 2px solid #007bff;
+    }
+
+    .timer {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 15px;
+        color: #ff5733;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .timer .time-box {
+        background-color: white;
+        color: black;
+    
+        margin: 0 5px;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .timer .time-box span {
+        font-size: 0.8rem;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+    .card-body > .row {
+        margin-top: 0; 
+        padding-top: 0; 
+    }
+    
+    .d-flex.align-items-center i {
+        margin-top: 0; 
+    }
+    
+@media (max-width: 768px) {
+    .breadcrumb {
+      font-size: 0.9rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    ul li {
+      font-size: 0.9rem;
+    }
+    .btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .d-flex {
+      flex-wrap: wrap;
+    }
+    .d-flex > div {
+      margin-bottom: 10px;
+    }
+  }
+  
+  </style>
+  
+</head>
+<body>
+  <div class="container py-5">
+    
+    <div class="row align-items-center mt-4">
+      <div class="col-md-8">
+        <h1 class="font-weight-bold">Microsoft Azure Cloud Architect Masters Program</h1>
+        <p>Master Azure Cloud Architecture with this Azure Cloud certification program</p>
+        <ul class="list-unstyled">
+          <li><i class="text-success fas fa-check-circle"></i> Earn a certificate of completion from Microsoft and Simplilearn</li>
+          <li><i class="text-success fas fa-check-circle"></i> Content aligned to AZ 900, AZ 104, and AZ 305 exams</li>
+          <li><i class="text-success fas fa-check-circle"></i> Get Access to official Microsoft Learn materials</li>
+          <li><i class="text-success fas fa-check-circle"></i> Exam Voucher included for any one Azure course</li>
+        </ul>
+        <p>Powered by</p>
+        <div class="d-flex align-items-center" style="margin-bottom:20px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" class="mr-3" style="width: 40px;"><h5>Microsoft</h5>
+        </div>
+       
+        <div class="d-flex align-items-center">
+          <button class="btn btn-primary" style="padding:10px 25px 10px 25px;">Talk to Advisor</button>
+          <button class="btn btn-outline-primary ml-2"  style="padding:10px 25px 10px 25px;">Download Syllabus</button>
+        </div>
+      </div>
+      <div class="col-md-4 text-center">
+        <!-- Polygonal Background with Outline -->
+        <div style="position: relative; display: inline-block;">
+            <!-- Polygon Background -->
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: #f5f5f5; clip-path: polygon(0% 10%, 20% 0%, 80% 0%, 100% 10%, 100% 90%, 80% 100%, 20% 100%, 0% 90%); z-index: -1;"></div>
+            
+            <!-- Large Profile Image with Outline -->
+            <img src="./image/gh.jpg" alt="Person" class="rounded-circle img-fluid" style="border: 5px solid #4CAF50; background-color: #fff;">
+        </div>
+        
+        <!-- Card Display Below the Image -->
+        <div class="card shadow-sm" style="max-width: 90%; margin-left: auto; margin-right: auto; margin-top: -60px;">
+            <div class="card-body d-flex justify-content-between align-items-center p-2">
+                <p class="mb-0"><strong>25,706 Learners</strong></p>
+                <p class="mb-0"><strong class="text-warning">4.6</strong> Ratings</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+      
+    </div>
+  </div>
+  <div class="container my-4">
+    <div class="card shadow border-0">
+        <div class="card-body">
+            <div class="row text-center text-md-left align-items-center">
+                <!-- Next Cohort -->
+                <div class="col-md-4 d-flex align-items-center mb-3 mb-md-0">
+                    <i class="fas fa-calendar-alt text-primary mr-2 fa-lg"></i>
+                    <div>
+                        <strong>Next cohort starts:</strong>
+                        <br>
+                        <span class="text-success font-weight-bold">11th Jan, 2025</span>
+                    </div>
+                </div>
+
+                <!-- Program Duration -->
+                <div class="col-md-4 d-flex align-items-center mb-3 mb-md-0">
+                    <i class="fas fa-clock text-primary mr-2 fa-lg"></i>
+                    <div>
+                        <strong>Program Duration:</strong>
+                        <br>
+                        <span class="text-success font-weight-bold">3 months</span>
+                    </div>
+                </div>
+
+                <!-- Learning Format -->
+                <div class="col-md-4 d-flex align-items-center">
+                    <i class="fas fa-laptop text-primary mr-2 fa-lg"></i>
+                    <div>
+                        <strong>Learning Format:</strong>
+                        <br>
+                        <span class="text-success font-weight-bold">Live, Online, Interactive</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <div class="container my-5">
+    <h2 style="margin-bottom: 20px;">Why Join this Program</h2>
+    <div class="row">
+        <!-- Left Section with Features -->
+        <div class="col-lg-8">
+            <div class="row">
+                <!-- Azure Exam Voucher -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">Azure Exam Voucher</h5>
+                            <p class="card-text">Get access to an MS Azure exam voucher for any one Azure course</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Microsoft Advantage -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">Microsoft Advantage</h5>
+                            <p class="card-text">Earn a program completion certificate from Microsoft and Simplilearn</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industry Relevant Skills -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">Industry Relevant Skills</h5>
+                            <p class="card-text">Advance your career with 20+ in-demand skills and 15+ services</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lifetime Access -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">Lifetime Access</h5>
+                            <p class="card-text">Get access to self-paced videos & class recordings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-0">
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                            <h6 class="mb-0">4.5</h6>
+                            <i class="fas fa-star text-warning" style="margin: 0 8px;"></i>
+                            <h5 class="mb-0">Switchup</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-0">
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                            <h6 class="mb-0">4.4</h6>
+                            <i class="fas fa-star text-warning" style="margin: 0 8px;"></i>
+                            <h6 class="mb-0" style="color:green;">COURSE REPORT</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-0">
+                        <div class="card-body d-flex align-items-center justify-content-between">
+                            <h6 class="mb-0">4.5</h6>
+                            <i class="fas fa-star text-warning" style="margin: 0 8px;"></i>
+                            <h5 class="mb-0">Trustpilot</h5>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Right Section with Form -->
+        <div class="col-lg-4">
+            <div class="card shadow-lg">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Next Cohort Starts on <span class="text-primary">11<sup>th</sup> Jan</span></h5>
+                    <div class="timer" id="countdown">
+                        <!-- Countdown timer will be displayed here -->
+                    </div>
+                    <form>
+                        <div class="form-group mt-4">
+                            <input type="text" class="form-control" placeholder="Name*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email*" required>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <select class="form-control" style="width: 80px;">
+                                        <option value="+91">IN +91</option>
+                                        <option value="+1">US +1</option>
+                                        <option value="+44">UK +44</option>
+                                        <!-- Add more country codes -->
+                                    </select>
+                                </div>
+                                <input type="tel" class="form-control" placeholder="Phone*" required>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center pl-3">
+                            <label class="mr-3">Inquiry:</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inquiry" id="myself" value="myself" checked>
+                                <label class="form-check-label" for="myself">Myself</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inquiry" id="company" value="company">
+                                <label class="form-check-label" for="company">My Company</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" required>
+                                <option value="" disabled selected>Experience*</option>
+                                <option value="0">Fresher</option>
+                                <option value="1-3">1-3 Years</option>
+                                <option value="3-5">3-5 Years</option>
+                                <option value="5+">5+ Years</option>
+                            </select>
+                        </div>
+                        <div class="form-check pl-3 mb-3">
+                            <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                            <label class="form-check-label" for="privacyPolicy">
+                                By providing your contact details, you agree to our <a href="#" target="_blank">Privacy Policy</a>.
+                            </label>
+                        </div>                        
+                        <button type="submit" class="btn btn-primary btn-block">Talk to Our Advisor</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="container">
+    <h3>Azure Cloud Career Opportunities</h3>
+    <div class="row">
+        <div class="col-lg-8 col-md-12">
+            <p style="text-align: justify;">Azure’s market share has seen steady growth. In 2024, Azure market share reached 24% of the global cloud computing market and their customer base grew by 14.2% from 2023 to 2024. As per HG Insights, nearly 350,000 businesses use Azure cloud computing solutions.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-12">
+            <h3>Industry Hiring Trends</h3>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card p-0 mt-4">
+                        <div class="card-body">
+                            <p>Job growth from 2023 to 2033</p>
+                            <h1 style="color:blue;">13%</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card p-0 mt-4 ">
+                        <div class="card-body">
+                            <p>Average Azure Architect Salary</p>
+                            <h1 style="color:blue;">₹30 L</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card p-0 mt-4 mb-3">
+                        <div class="card-body">
+                            <p>Fortune 500 firms use Azure</p>
+                            <h1 style="color:blue;">95%</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-lg-8 col-md-12">
+          <h3>Companies Hiring Cloud Architects</h3>
+          <div class="card mt-4">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <img src="./image/HCL-logo.png" classs="img-fluid" height="50px" width="100px">
+                    <img src="./image/optum.png" classs="img-fluid" height="50px" width="100px">
+                    <img src="./image/wipro.png" classs="img-fluid" height="50px" width="100px">
+                    <img src="./image/infosys.png" classs="img-fluid" height="50px" width="100px">
+                </div>
+                <div class="d-flex justify-content-between mt-5">
+                    <img src="./image/kpmg.png" classs="img-fluid" height="50px" width="100px">
+                    <img src="./image/tcs.jpeg" height="50px" width="100px">
+                    <img src="./image/Dell.png" height="50px" width="100px">
+                    <img src="./image/deloitee.png" height="50px" width="100px">
+                </div>
+                <div class="d-flex justify-content-between mt-5">
+                    <img src="./image/EY.png" height="50px" width="100px">
+                    <img src="./image/Amazon.png" height="50px" width="100px">
+                    <img src="./image/HCL-logo.png" height="50px" width="100px">
+                    <img src="./image/optum.png" height="50px" width="100px">
+                </div>
+                <div class="d-flex justify-content-between mt-5">
+                    <img src="./image/HCL-logo.png" height="50px" width="100px">
+                    <img src="./image/optum.png" height="50px" width="100px">
+                    <img src="./image/HCL-logo.png" height="50px" width="100px">
+                    <img src="./image/optum.png" height="50px" width="100px">
+                </div>
+            </div>
+          </div>
+
+        </div>
+    </div>    
+ </div>
+ <div class="container">
+    <h3>Azure Course Overview</h3>
+    <div class="row">
+        <div class="col-lg-8 col-md-12">
+            <p style="text-align: justify;">This Azure Cloud Certification program equips learners with essential skills for excelling in cloud architecture roles. Gain expertise in designing, implementing, and managing robust cloud solutions on Azure through theoretical lessons and practical exercises.</p>
+        </div>
+    </div>
+
+    <!-- List of Features -->
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="list-unstyled">
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Certificate of completion from Microsoft and Simplilearn</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Exam voucher included</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> 8X higher interaction in live online classes conducted by Microsoft Certified Trainers</li>
+            </ul>
+        </div>
+
+        <div class="col-md-4">
+            <ul class="list-unstyled">
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Content aligned to AZ 900, AZ 104, and AZ 305 exams</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Earn course completion certificates on the Microsoft Azure Learn portal</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Learn hands-on with top Azure Cloud tools covered in the curriculum</li>
+            </ul>
+        </div>
+
+        <div class="col-md-4">
+            <ul class="list-unstyled">
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Learn 20+ in-demand Skills & 15+ services</li>
+                <li><i class="text-primary fas fa-check-circle"></i> Simplilearn's JobAssist helps you get noticed by top hiring companies</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h3 style="margin-bottom: 20px;">18+ Skills Covered</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="list-unstyled">
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Policy</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Workbooks</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i>Azure Traffic Manager</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Files</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Stream Analytics</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Kubernetes Service</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul class="list-unstyled">
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Blueprints</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Monitor</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i>Azure Site Recovery</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure SQL DB</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure SQL DB</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Resource Manager</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <ul class="list-unstyled">
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Key Vault</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Front Door</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i>Azure Blob Storage</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Cosmos DB</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure App Service</li>
+                <li><i class="text-primary fas fa-check-circle mb-4"></i> Azure Load Balancer</li>
+            </ul>
+        </div>
+    </div>
+</div>
+ <div class="container">
+    <h3 style="margin-bottom: 30px;">Why Choose Vcube Software Solutions?</h3>
+    <div class="row">
+        <div class="col-lg-4 col-md-12">
+                <div class="card shadow-sm text-center">
+                    <div class="card-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3">Expert Guidance</h5>
+                        <p class="card-text">Learn directly from industry veterans with real-world experience.</p>
+                    </div>
+                </div>
+           
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="card shadow-sm text-center">
+                <div class="card-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mt-3">Practical Training</h5>
+                    <p class="card-text">Gain hands-on experience with real-world projects and daily labs.</p>
+                </div>
+            </div>
+       
+        </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="card shadow-sm text-center">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title mt-3">Placement Assistance</h5>
+                        <p class="card-text">We are committed to your success and won't stop until you're placed.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+ </div>
+ <div class="container">
+    <h3 style="margin-top: 15px;">Curriculum Overview</h3>
+    <div class="row">
+        <!-- Module 1 Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white" style="margin: 0; padding: 15px;">
+                    <h5 class="card-title mb-0">Module 1: Azure and AWS Fundamentals</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="text-primary fas fa-check-circle"></i> Introduction to Multi Cloud Platforms</li>
+                        <li><i class="text-primary fas fa-check-circle"></i> Key Features of AWS and Azure</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Example Module 2 Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white" style="margin: 0; padding: 15px;">
+                    <h5 class="card-title mb-0">Module 2: Cloud Security and Governance</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="text-primary fas fa-check-circle"></i> Building Secure Cloud Architectures</li>
+                        <li><i class="text-primary fas fa-check-circle"></i> Data Protection and Compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Example Module 3 Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white" style="margin: 0; padding: 15px;">
+                    <h5 class="card-title mb-0">Module 3: Infrastructure Deployment and Automation</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="text-primary fas fa-check-circle"></i> Deploying Scalable Solutions</li>
+                        <li><i class="text-primary fas fa-check-circle"></i> Implementing Disaster Recovery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 4 Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white" style="margin: 0; padding: 15px;">
+                    <h5 class="card-title mb-0">Module 4: Advanced Cross-Cloud Techniques</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="text-primary fas fa-check-circle"></i> Integrating AWS and Azure</li>
+                        <li><i class="text-primary fas fa-check-circle"></i> Application and Database Synchronization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 5 Card -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white" style="margin: 0; padding: 15px;">
+                    <h5 class="card-title mb-0">Module 5: Real-World Use Cases</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><i class="text-primary fas fa-check-circle"></i> Hands-on Projects in Security, Infrastructure, and Data Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h3>Join the Growing Cloud Industry</h3>
+    <div class="row">
+        <div class="col-lg-9 col-md-12">
+            <p style="text-align: justify;">The cloud computing market in India was valued at $6.2 billion in 2022 and is projected to grow to $25.8 billion by 2032.
+                India is a significant growth market for Microsoft Cloud where demand ranges from modernizing infrastructure to building new platforms.</p>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm d-flex flex-row align-items-center">
+                <div class="card-icon text-white p-3">
+                    <i class="fas fa-chart-line fa-2x"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">$24.3 Bn</h5>
+                    <p class="card-text">Microsoft's intelligent cloud revenue (which includes Azure) in 2024</p>
+                </div>
+            </div>
+            <p class="text-center mt-2">Source: Daily Host News</p>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm d-flex flex-row align-items-center">
+                <div class="card-icon text-white p-3">
+                    <i class="fas fa-briefcase fa-2x"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">₹30 L</h5>
+                    <p class="card-text">Is the average annual salary of an Azure Solution Architect in India</p>
+                </div>
+            </div>
+            <p class="text-center mt-2">Source: Glassdoor</p>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card shadow-sm d-flex flex-row align-items-center">
+                <div class="card-icon bg-warning text-white p-3">
+                    <i class="fas fa-chart-pie fa-2x"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">17.2% CAGR</h5>
+                    <p class="card-text">Expected between 2023 to 2032</p>
+                   
+                </div>
+                
+            </div>
+            <p class="text-center mt-2">Source: Market Research</p>
+        </div>
+    </div>    
+</div>
+
+<div class="container my-5">
+    <h3 class="mb-4">Companies Hiring</h3>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="row text-center align-items-center">
+                        <div class="col-6 col-md-3 col-lg-2 mb-3">
+                            <img src="./image/Amazon.png" class="img-fluid" alt="Amazon Logo">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 mb-3">
+                            <img src="./image/Dell.png" class="img-fluid" alt="Dell Logo">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 mb-3">
+                            <img src="./image/deloitee.png" class="img-fluid" alt="Deloitte Logo">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 mb-3">
+                            <img src="./image/EY.png" class="img-fluid" alt="EY Logo">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 mb-3">
+                            <img src="./image/tcs.jpeg" class="img-fluid" alt="TCS Logo">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 mb-3">
+                            <img src="./image/wipro.png" class="img-fluid" alt="Wipro Logo">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 mb-3">
+                            <img src="./image/infosys.png" class="img-fluid" alt="Infosys Logo">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 mb-3">
+                            <img src="./image/kpmg.png" class="img-fluid" alt="KPMG Logo">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 mb-3">
+                            <img src="./image/HCL-logo.png" class="img-fluid" alt="HCL Logo">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 mb-3">
+                            <img src="./image/optum.png" class="img-fluid" alt="optum Logo">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h3 style="color: blue;">Book Your Free Demo Session Today!</h3>
+                    <p class="card-text mt-3">
+                        Take the first step toward your career in IT. Enroll in our Python Full Stack Development Program and achieve your dream job!
+                    </p>
+                    <div class="d-flex justify-content-center align-items-center mt-4">
+                        <i class="fas fa-phone text-primary me-2"></i>
+                        <p class="mb-0">Call Us Now: <a href="tel:+1234567890">+1234567890</a></p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-3">
+                        <i class="fas fa-location-arrow text-primary me-2"></i>
+                        <p class="mb-0">Location: 2nd Floor Above Raymond’s Clothing Store, KPHB, Phase-1, Kukatpally, Hyderabad​</p>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center mt-3">
+                        <i class="fas fa-globe text-primary me-2"></i>
+                        <p class="mb-0">Website: <a href="https://www.vcubesoftsolutions.com/" target="_blank">https://www.vcubesoftsolutions.com/</a></p>
+                    </div>
+                    <button class="btn btn-primary mt-4" type="button">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <script>
+    // Countdown Timer
+    const countdownElement = document.getElementById("countdown");
+    const targetDate = new Date("2025-01-11T00:00:00").getTime(); // Target date
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+       
+
+        if (distance < 0) {
+            countdownElement.innerHTML = "Cohort has started!";
+            return;
+        }
+
+        countdownElement.innerHTML = `
+            
+            <div class="time-box">
+                <span>Days</span>
+                ${days}
+            </div>
+            <div class="time-box">
+                <span>Hours</span>
+                ${hours}
+            </div>
+            <div class="time-box">
+                <span>Minutes</span>
+                ${minutes}
+            </div>
+            <div class="time-box">
+                <span>Seconds</span>
+                ${seconds}
+            </div>
+           
+        `;
+    }
+
+    setInterval(updateCountdown, 1); 
+   </script>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
